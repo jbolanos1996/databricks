@@ -9,6 +9,6 @@ steps:
     location: 'East US'
     templateLocation: 'URL of the file'
     csmFileLink: 'https://raw.githubusercontent.com/jbolanos1996/databricks/main/databricks/databriks.json'
-    overrideParameters: '-projectname ATT'
+    overrideParameters: '-projectName att'
     deploymentMode: 'Incremental'
     deploymentName: 'deploydatabricks'
