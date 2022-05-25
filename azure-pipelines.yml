@@ -1,0 +1,14 @@
+steps:
+- task: AzureResourceManagerTemplateDeployment@3
+  inputs:
+    deploymentScope: 'Resource Group'
+    azureResourceManagerConnection: 'Suscripción de Visual Studio Enterprise - MPN(30f8fc49-5e1c-4034-acc5-709c7300e987)'
+    subscriptionId: '30f8fc49-5e1c-4034-acc5-709c7300e987'
+    action: 'Create Or Update Resource Group'
+    resourceGroupName: 'att'
+    location: 'East US'
+    templateLocation: 'URL of the file'
+    csmFileLink: 'https://raw.githubusercontent.com/jbolanos1996/databricks/main/databricks/databriks.json'
+    overrideParameters: '-projectname ATT'
+    deploymentMode: 'Incremental'
+    deploymentName: 'deploydatabricks'
